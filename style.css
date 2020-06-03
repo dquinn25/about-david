@@ -1,3 +1,32 @@
+h1 {
+  color: rgb(22, 18, 18);
+}
+ul {
+color: white;
+background-color: #201d64
+}
+ol {
+color: orange
+}
+body {
+background-color: green;
+}
+
 img{
   width: 300px;
+
+  margin-top: 30px;
+  border-top: 10 px solid salmon
+  padding-top: 15 px
+}
+
+p:first-of-type{
+  border: solid red 1px;
+  20px 30px 40px
+  border: solid red 
+}
+
+p {
+  display: inline-block:
+  max-width: 350px
 }
