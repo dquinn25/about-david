@@ -1,4 +1,6 @@
 'use strict';
+var username = prompt('hello what is your name');
+alert('Hello ' + username + 'Welcome!')
 //
 
 
@@ -40,6 +42,36 @@ if (timesBeenMexico === '4')
         // console(log)
            alert('Nice Job')
 
+var ageQuestion = prompt('how old is david?');
+if (ageQuestion === '24')
+alert('Nice Job');
+                           // console(log)
+var count = 1;
+ while (ageQuestion != 24 && count<4){
+        if (ageQuestion < 24)
+        alert('Nope try a little higher');
+ if (ageQuestion > 24)
+        alert('Nope try a little lower');
+                   // console(log)
+ ageQuestion = prompt('how old is david?'); 
+ count++;
+ }
+alert("David is 24 (year of Kobe)");
+
+// for(var i = 0; i < firstArray.length; i++){
+//         alert(firstArray[i]);
+
+
+continent = prompt('What continent has David been to?');
+var myContinents = ['north america', 'europe', 'asia', 'australia'];
+var correctContinent = false; 
+
+while (correctContinents == false && count<6)
+for(var i =0; i < myContinents.length; i++){
+        if (continent === myContinents[i]) {alert('Good job!'); correctContinent = true;}
+
+}
+
            var today = new Date();
            var hourNow = today.getHours();
            var greeting;
@@ -58,3 +90,5 @@ if (timesBeenMexico === '4')
         var username = prompt('what is your name');
 
 document.write('<h3>' + username + '</h3>');
+var parent = document.getElementById('username')
+
