@@ -63,33 +63,37 @@ function timesMexico(){
     score ++;
     alert('Nice Job');
   } else {
-    alert('Wrong. he has been cuatro times');
+    alert('Wrong. he has been quatro times');
   }
 }
 
 timesMexico();
 
-function ageQuestion(){
+function askAgeQuestion(){
   var ageQuestion = prompt('how old is david?');
-  if (ageQuestion === '24'){
-  score ++;
-    alert('Nice Job');
+  ageQuestion = parseInt(ageQuestion)
   // console(log)
   var count = 1;
   while (ageQuestion != 24 && count<4){
-    if (ageQuestion < 24)
+    if (ageQuestion < 24){
       alert('Nope try a little higher');
-    if (ageQuestion > 24)
+    }
+    if (ageQuestion > 24){
       alert('Nope try a little lower');
+    }
     // console(log)
     ageQuestion = prompt('how old is david?');
     count++;
   }
-  alert("David is 24 (year of Kobe)");
+  if (ageQuestion === '24'){
+    score ++;
+    alert('Nice Job');
   }
+  alert("David is 24 (year of Kobe)");
 }
 
-ageQuestion();
+
+askAgeQuestion();
 
 // for(var i = 0; i < firstArray.length; i++){
 //         alert(firstArray[i]);
