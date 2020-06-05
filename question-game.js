@@ -1,11 +1,12 @@
 'use strict';
 var username = prompt('hello what is your name');
-alert('Hello ' + username + 'Welcome!');
+alert('Hello ' + username + ' Welcome!');
 //
-
+var score = 0
 function lastName(){
   var lastName = prompt('What is David\'s last name');
   if (lastName === 'Quinn' || lastName ==='quinn'){
+    score++;
     alert('Nice Job');
   } else {
     alert('no it\'s Quinn.');
@@ -18,10 +19,12 @@ function colorQuestion(){
   var favoriteColor = prompt('what David\'s favorite color? Hint its the color of his eyes sometimes');
   if (favoriteColor !== 'blue')
   // console(log)
-    favoriteColor = alert('wrong its Blue');
-  if (favoriteColor === 'blue')
+  favoriteColor = alert('wrong its Blue');
+  if (favoriteColor === 'blue'){
   // console(log)
+  score ++;
     alert('Nice Job');
+  }
 }
 
 colorQuestion();
@@ -31,9 +34,11 @@ function australiaQuestion(){
   if (australiaAnswer !== 'yes')
   // console(log)
     australiaAnswer = alert('actually he has its beautiful there');
-  if (australiaAnswer === 'yes')
+  if (australiaAnswer === 'yes'){
+  score ++;
   // console(log)
     alert('Nice Job');
+  }
 }
 
 australiaQuestion();
@@ -43,9 +48,11 @@ function mexicoQuestion(){
   if (mexico !== 'yes');
   // console(log)
   mexico = alert('actually he has multiple times');
-  if (mexico === 'yes');
+  if (mexico === 'yes');{
+  score ++;
   // console(log)
   alert('Nice Job');
+  }
 }
 
 mexicoQuestion();
@@ -53,6 +60,7 @@ mexicoQuestion();
 function timesMexico(){
   var timesBeenMexico = prompt('How many times has he been to mexico?');
   if (timesBeenMexico === '4'){
+    score ++;
     alert('Nice Job');
   } else {
     alert('Wrong. he has been cuatro times');
@@ -63,7 +71,8 @@ timesMexico();
 
 function ageQuestion(){
   var ageQuestion = prompt('how old is david?');
-  if (ageQuestion === '24')
+  if (ageQuestion === '24'){
+  score ++;
     alert('Nice Job');
   // console(log)
   var count = 1;
@@ -77,6 +86,7 @@ function ageQuestion(){
     count++;
   }
   alert("David is 24 (year of Kobe)");
+  }
 }
 
 ageQuestion();
@@ -98,8 +108,8 @@ function continentQuestion(){
     // this loop verifys the answer
     for(var i = 0; i < myContinents.length; i++){
       if (continent === myContinents[i]){
+        score ++;
         alert('Good job!');
-        correct++;
         correctContinent = true;
       }
     }
@@ -110,6 +120,8 @@ function continentQuestion(){
 }
 
 continentQuestion();
+
+alert('Congrats ' + username + ' you got ' + score + ' out of 7 questions correct');
 
 var today = new Date();
 var hourNow = today.getHours();
