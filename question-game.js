@@ -45,13 +45,13 @@ australiaQuestion();
 
 function mexicoQuestion(){
   var mexico = prompt('has David been to mexico?');
-  if (mexico !== 'yes')
+  if (mexico === 'yes'){
+    score ++;
+    alert('Nice Job');
+  }else { 
   // console(log)
-  mexico = alert('actually he has multiple times');
-  if (mexico === 'yes');{
-  score ++;
+   alert('actually he has multiple times');
   // console(log)
-  alert('Nice Job');
   }
 }
 
