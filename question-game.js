@@ -1,7 +1,7 @@
 'use strict';
 var username = prompt('hello what is your name');
 alert('Hello ' + username + ' Welcome!');
-//
+
 var score = 0
 function lastName(){
   var lastName = prompt('What is David\'s last name');
@@ -18,10 +18,8 @@ lastName();
 function colorQuestion(){
   var favoriteColor = prompt('what David\'s favorite color? Hint its the color of his eyes sometimes');
   if (favoriteColor !== 'blue')
-  // console(log)
   favoriteColor = alert('wrong its Blue');
   if (favoriteColor === 'blue'){
-  // console(log)
   score ++;
     alert('Nice Job');
   }
@@ -32,11 +30,9 @@ colorQuestion();
 function australiaQuestion(){
   var australiaAnswer = prompt('has David been to Australia?');
   if (australiaAnswer !== 'yes')
-  // console(log)
     australiaAnswer = alert('actually he has its beautiful there');
   if (australiaAnswer === 'yes'){
   score ++;
-  // console(log)
     alert('Nice Job');
   }
 }
