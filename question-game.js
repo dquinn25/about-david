@@ -49,9 +49,7 @@ function mexicoQuestion(){
     score ++;
     alert('Nice Job');
   }else { 
-  // console(log)
    alert('actually he has multiple times');
-  // console(log)
   }
 }
 
@@ -72,7 +70,6 @@ timesMexico();
 function askAgeQuestion(){
   var ageQuestion = prompt('how old is david?');
   ageQuestion = parseInt(ageQuestion)
-  // console(log)
   var count = 1;
   while (ageQuestion != 24 && count<4){
     if (ageQuestion < 24){
@@ -81,7 +78,6 @@ function askAgeQuestion(){
     if (ageQuestion > 24){
       alert('Nope try a little lower');
     }
-    // console(log)
     ageQuestion = prompt('how old is david?');
     count++;
   }
@@ -95,8 +91,6 @@ function askAgeQuestion(){
 
 askAgeQuestion();
 
-// for(var i = 0; i < firstArray.length; i++){
-//         alert(firstArray[i]);
 
 
 function continentQuestion(){
@@ -105,11 +99,9 @@ function continentQuestion(){
   var count = 0;
 
 
-  // runs once for every chance they have
   while (correctContinent === false && count < 6){
     var continent = prompt('What continent has David been to?');
     count++;
-    // this loop verifys the answer
     for(var i = 0; i < myContinents.length; i++){
       if (continent === myContinents[i]){
         score ++;
